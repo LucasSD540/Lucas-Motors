@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Motors</title>
+    <link rel="stylesheet" href="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_css_bootstrap.min.css">
+</head>
+<style>
+
+    body {
+        background-color: #d4b25d;
+    }
+
+    #cabecalho {
+        background-color: #FFD700;
+        margin-bottom: 32px;
+    }
+
+    #veiculos {
+        margin-bottom: 32px;
+    }
+
+    #veiculos #carousel img {
+        height: 700px;
+    }
+
+    #veiculos h3 {
+        border-bottom: 3px solid black;
+    }
+
+    #anuncios img {
+        height: 354px;
+    }
+
+    #anuncios {
+        margin-bottom: 32px;
+    }
+
+    #anuncios h3 {
+        border-bottom: 3px solid black;
+    }
+
+    .card {
+        background-color: black;
+        color: #fff;
+    }
+
+    #clientes {
+        margin-bottom: 32px;
+    }
+
+    #clientes h3 {
+        border-bottom: 3px solid black;
+    }
+
+    #clientes h5 {
+        color: #FFD700;
+    }
+
+    #footer {
+        background-color: #FFD700;
+        padding: 16px 0;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .card-header {
+            font-size: 15px;
+        }
+    }
+
+    @media screen and (max-width: 960px) {
+        #anuncios .col-4 {
+            width: 45%;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 16px;
+        }
+
+        #clientes .col-4 {
+            width: 45%;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 16px;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        #anuncios .col-4 {
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 16px;
+        }
+
+        #clientes .col-4 {
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 16px;
+        }
+
+        #veiculos #carousel img {
+        height: 400px;
+    }
+    }
+</style>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Lucas Motors</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#veiculos">Veículos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#anuncios">Anúncios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#clientes">Clientes satisfeitos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <body>
+        <section id="veiculos">
+            <div class="container">
+                <h3>Veículos</h3>
+                <div id="carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img class="d-block w-100" src="imagens/ram-1500-rebel-2021-brasil.jpg">
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100" src="imagens/46b551cca3b240d797e936a231f1ad1c_1679163015850.jpg">
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100" src="imagens/Ram-3500-Limited-LongHorn_1.jpg">
+                        </div>
+                    </div>
+                    <button data-bs-target="#carousel" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel" data-bs-slide="next" class="carousel-control-next" type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="anuncios">
+            <div class="container">
+                <h3>Anúncios</h3>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card">
+                            <header class="card-header">
+                                Ram 1500 Rebel 5.7 V8
+                            </header>
+                            <img src="imagens/ram-1500-rebel-2021-brasil.jpg">
+                            <article class="card-body">
+                                <h4 class="card-title">Ram 1500 Rebel</h4>
+                                <h5 class="card-subtitle">R$ 450.000,00</h5>
+                                <p class="card-text">
+                                    4 portas, 4x4, vermelha, 0km
+                                </p>
+                                <a href="#" class="btn btn-success">Eu quero!</a>
+                            </article>
+                            <footer>
+                                <div class="card-footer">
+                                    Postado às <time>10:30</time>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header">
+                                Ram 2500 Laramie 6.7 l6 Turbo Diesel
+                            </div>
+                            <img src="imagens/46b551cca3b240d797e936a231f1ad1c_1679163015850.jpg">
+                            <article class="card-body">
+                                <h4 class="card-title">Ram 2500 Laramie</h4>
+                                <h5 class="card-subtitle">R$ 440.000,00</h5>
+                                <p class="card-text">
+                                    4 portas, 4x4, branca, 0km
+                                </p>
+                                <a href="#" class="btn btn-success">Eu quero!</a>
+                            </article>
+                            <footer>
+                                <div class="card-footer">
+                                    Postado às <time>11:30</time>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header">
+                                Ram 3500 Longhorn 6.7 l6 Turbo Diesel
+                            </div>
+                            <img src="imagens/Ram-3500-Limited-LongHorn_1.jpg">
+                            <article class="card-body">
+                                <h4 class="card-title">Ram 3500 Longhorn</h4>
+                                <h5 class="card-subtitle">R$ 510.000,00</h5>
+                                <p class="card-text">
+                                    4 portas, 4x4, preta, 0km
+                                </p>
+                                <a href="#" class="btn btn-success">Eu quero!</a>
+                            </article>
+                            <footer>
+                                <div class="card-footer">
+                                    Postado às <time>12:30</time>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="clientes">
+            <div class="container">
+                <h3>Clientes Satisfeitos</h3>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card">
+                            <header class="card-header">
+                                Lucas da Silva
+                            </header>
+                            <img src="https://media.istockphoto.com/id/1388648617/pt/foto/confident-caucasian-young-man-in-casual-denim-clothes-with-arms-crossed-looking-at-camera-with.webp?s=2048x2048&w=is&k=20&c=bsg-9EwMLyhNtNEU3ZhMGD_swsbeoVuDcLpKG_mm7yI=">
+                            <article class="card-body">
+                                <h4 class="card-title">Adiquiriu um Audi A3</h4>
+                                <h5 class="card-subtitle">&#9733;&#9733;&#9733;&#9733;&#9733;</h5>
+                                <p class="card-text">
+                                    Gostei muito da compra!
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header">
+                                Maria Pereira
+                            </div>
+                            <img src="https://media.istockphoto.com/id/1398279371/pt/foto/portrait-of-confident-positive-business-mature-woman-looking-at-camera.webp?s=2048x2048&w=is&k=20&c=VWzfgaPPeQjJspeGP2pkK57IPMBwjzkzSWMH-hsorKQ=">
+                            <article class="card-body">
+                                <h4 class="card-title">Adiquiriu um Audi Q3</h4>
+                                <h5 class="card-subtitle">&#9733;&#9733;&#9733;&#9733;&#9733;</h5>
+                                <p class="card-text">
+                                    Excelente compra!
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header">
+                                Rodrigo Costa
+                            </div>
+                            <img src="https://media.istockphoto.com/id/1364917563/pt/foto/businessman-smiling-with-arms-crossed-on-white-background.webp?s=2048x2048&w=is&k=20&c=MBPzlXCG9Z1hQF-C_TzYMqRMVdPuq9xqN8zH1JI9LD8=">
+                            <article class="card-body">
+                                <h4 class="card-title">Adiquiriu um Porsche 911</h4>
+                                <h5 class="card-subtitle">&#9733;&#9733;&#9733;&#9733;&#9733;</h5>
+                                <p class="card-text">
+                                    Estou muito satisfeito!
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="container">
+                &copy; Lucas Motors - todos os direitos reservados
+            </div>
+        </footer>
+
+    <script src="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.bundle.min.js"></script>
+    </body>
+</body>
+</html>
